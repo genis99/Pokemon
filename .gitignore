@@ -23,6 +23,9 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+DEVELOPER_NOTES.MD
+IDEAS.MD
+nohup.out
 
 *.tsbuildinfo
 
@@ -39,4 +42,6 @@ __screenshots__/
 .env
 .env.local
 .env.*.local
+
+
 
