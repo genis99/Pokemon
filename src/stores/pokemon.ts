@@ -1,5 +1,5 @@
-import { ref, computed, reactive } from 'vue'
 import { defineStore } from 'pinia'
+import { reactive } from 'vue'
 import type { Generation } from '@/types/pokemon.ts'
 import type { Point } from '@/types/util.ts'
 import { getPokemon } from '@/api/pokemon.ts'

@@ -2,7 +2,9 @@
 import TheWelcome from '../components/TheWelcome.vue'
 import { usePokemonStore } from '@/stores/pokemon.ts'
 import { onMounted } from 'vue'
+import { useErrorStore } from '@/stores/error.ts'
 const pokemonStore = usePokemonStore()
+const errorStore = useErrorStore()
 
 onMounted(async () => {
   await pokemonStore.getPokemonGen('gen1')
@@ -14,6 +16,8 @@ onMounted(async () => {
   await pokemonStore.getPokemonGen('gen7')
   await pokemonStore.getPokemonGen('gen8')
   await pokemonStore.getPokemonGen('gen9')
+
+  errorStore.alert('Hola')
 })
 </script>
 
